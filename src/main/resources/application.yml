@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: myKafkaApp
+#kafka.bootstrap.servers: localhost:9092
+kafka:
+  consumers:
+    productsGroup:
+      session:
+        timeout:
+          ms: 30000
+netty:
+  default:
+    allocator:
+      max-order: 3
